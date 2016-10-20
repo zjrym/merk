@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑"; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: .88rem;
+  background: #f0f0f0;
+  border-bottom: 2px solid #dfdfdf; }
+  .header a {
+    position: absolute;
+    top: .23rem; }
+    .header a:nth-of-type(1) {
+      left: .3rem;
+      width: .28rem;
+      height: .38rem;
+      background: url(../images/1_03.png) no-repeat;
+      background-size: cover; }
+    .header a:nth-of-type(2) {
+      right: .3rem;
+      width: .39rem;
+      height: .38rem;
+      background: url(../images/tel.png) no-repeat;
+      background-size: cover; }
+  .header h1 {
+    text-align: center;
+    line-height: .88rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  width: 100%;
+  background: #ebebf1; }
+
+.tex1 {
+  width: 100%;
+  height: .82rem;
+  padding-left: .3rem;
+  line-height: .83rem;
+  color: #fd8608; }
+
+.ma1 {
+  width: 100%;
+  height: 1.3rem;
+  background: #fff;
+  padding-left: .3rem;
+  position: relative; }
+  .ma1 h1 {
+    padding-top: .12rem; }
+  .ma1 p {
+    padding-top: .15rem; }
+  .ma1 span {
+    position: absolute;
+    right: .6rem;
+    bottom: .16rem;
+    color: #fc6208;
+    font-weight: bold; }
+
+.tex2 {
+  width: 100%;
+  height: .55rem;
+  line-height: .55rem;
+  padding-left: .3rem; }
+
+.ma2 {
+  width: 100%;
+  height: auto;
+  background: #fff; }
+  .ma2 p {
+    padding-left: .3rem;
+    line-height: 2em; }
+    .ma2 p b {
+      padding-left: .4rem; }
+
+.tex3 {
+  width: 100%;
+  height: .8rem;
+  background: #fd8608;
+  margin-top: .45rem;
+  padding-left: .3rem;
+  color: #fff;
+  line-height: .8rem; }
+
+.nei {
+  width: 100%;
+  height: .87rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  position: relative; }
+  .nei:nth-of-type(4) a {
+    position: absolute;
+    width: .45rem;
+    height: .45rem;
+    background: url(../images/zfb.png) no-repeat;
+    background-size: cover;
+    left: .3rem;
+    top: .2rem; }
+  .nei:nth-of-type(5) a {
+    position: absolute;
+    width: .53rem;
+    height: .33rem;
+    background: url(../images/upay.png) no-repeat;
+    background-size: cover;
+    left: .3rem;
+    top: .2rem; }
+  .nei a {
+    position: absolute;
+    width: .39rem;
+    height: .39rem;
+    background: url(../images/weixin.png) no-repeat;
+    background-size: cover;
+    left: .3rem;
+    top: .2rem; }
+  .nei span {
+    position: absolute;
+    left: 1rem;
+    top: .2rem; }
+  .nei input {
+    position: absolute;
+    right: .3rem;
+    top: .2rem;
+    width: .4rem;
+    height: .4rem; }
+
+.btn {
+  width: 95%;
+  height: .78rem;
+  background: #f39c12;
+  border-radius: 15px;
+  margin-left: 2%;
+  text-align: center;
+  line-height: .78rem;
+  margin-top: .4rem;
+  color: #fff; }

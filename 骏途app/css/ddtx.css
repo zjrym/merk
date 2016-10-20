@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑"; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: .88rem;
+  background: #f0f0f0;
+  border-bottom: 2px solid #dfdfdf; }
+  .header a {
+    position: absolute;
+    top: .23rem; }
+    .header a:nth-of-type(1) {
+      left: .3rem;
+      width: .28rem;
+      height: .38rem;
+      background: url(../images/1_03.png) no-repeat;
+      background-size: cover; }
+    .header a:nth-of-type(2) {
+      right: .3rem;
+      width: .39rem;
+      height: .38rem;
+      background: url(../images/tel.png) no-repeat;
+      background-size: cover; }
+  .header h1 {
+    text-align: center;
+    line-height: .88rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  width: 100%;
+  background: #ebebf1; }
+  .main p {
+    width: 100%;
+    height: .8rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-left: .3rem;
+    line-height: .8rem;
+    position: relative; }
+    .main p:nth-of-type(3) {
+      margin-top: .3rem; }
+    .main p:nth-of-type(5) {
+      margin-top: .3rem; }
+      .main p:nth-of-type(5) span {
+        color: #353535; }
+    .main p span {
+      position: absolute;
+      right: .7rem;
+      line-height: .8rem;
+      color: #39c3d0; }
+    .main p input {
+      position: absolute;
+      right: .7rem;
+      top: .2rem;
+      height: .4rem;
+      border: none;
+      width: 2.1rem; }
+
+.nav {
+  width: 100%;
+  height: 1.1rem;
+  border-bottom: 1px solid #ccc;
+  padding-left: .3rem;
+  line-height: 1.1rem; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 1.1rem;
+  background: #fff;
+  z-index: 1000;
+  padding-left: .3rem;
+  line-height: 1.1rem; }
+  .footer a {
+    color: #ff6600;
+    font-weight: bold; }
+    .footer a img {
+      width: .24rem;
+      height: .15rem; }
+  .footer span {
+    position: absolute;
+    right: .5rem;
+    width: 2.44rem;
+    height: .76rem;
+    background: #aaaaaa;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    top: .13rem;
+    display: block;
+    text-align: center;
+    line-height: .76rem;
+    color: #fff; }

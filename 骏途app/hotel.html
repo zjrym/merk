@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最大最小缩放比例为一，不允许用户手动缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从的缓存中访问页面内容 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/hotel.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<a href="html/Q3407.html" class="fa fa-chevron-left"></a>
+			<h1>酒店</h1>
+			<a href="" class="fa fa-home"></a>
+		</header>
+		<div class="main">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/20.jpg" alt=""></div>
+			        <div class="swiper-slide"><img src="images/21.jpg" alt=""></div>
+			        <div class="swiper-slide"><img src="images/22.jpg" alt=""></div>
+			    </div>
+			</div>
+			<div class="message">
+				<ul>
+					<li class="li1">
+						目的地
+						<p id="zhuan"><i id="mudi">西安</i>
+							<a href="">></a></p>
+						<dl>
+							<dd class="fa fa-crosshairs"></dd>
+							<dd>我的位置</dd>
+						</dl>
+					</li>
+					<li class="li2">
+						<dl>
+							<dd>入住</dd>
+							<dd id="in">8月30日</dd>
+						</dl>
+						<p><span id="inzhou">周二</span><a href="#" id="go">></a></p>
+						<h2 class="gong">1晚</h2>
+						<dl>
+							<dd>入住</dd>
+							<dd  id="out">8月30日</dd>
+						</dl>
+						<p><span id="outzhou">周三</span><a href="#" id="go">></a></p>
+					</li>
+					<li>
+						<input type="text" placeholder="关键字、位置、品牌、酒店名">
+					</li>
+					<li id="zhe"><b>星级/价格</b><span>></span></li>
+				</ul>
+				<button>查询</button>
+			</div>
+			<div class="hotel">
+				<h2><span class="fa fa-heart-o"></span>推荐酒店</h2>
+			</div>
+		</div>
+		<div class="mark">
+			<div class="tianjia">
+				<div class="top">
+					<h3>价格</h3>
+					<div>
+						<p class="yang">不限</p>
+						<p>￥150以下</p>
+						<p>￥150-￥300</p>
+						<p>￥300-￥600</p>
+						<p>￥600以上</p>
+					</div>
+				</div>
+				<div class="top1">
+					<h3>星级</h3>
+					<div>
+						<p class="yang1">不限</p>
+						<p>二星级以下</p>
+						<p>三星级</p>
+						<p>四星级</p>
+						<p>五星级</p>
+					</div>
+				</div>
+				<button id="btn">确定</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+	</script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zreo.js"></script>
+	<script src="js/swiper-3.3.1.min.js"></script>
+	<script src="js/hotel.js"></script>
+</body>
+</html>

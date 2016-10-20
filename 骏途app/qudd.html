@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最大最小缩放比例为一，不允许用户手动缩放 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<!-- 禁止设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+		<meta name="format-detection" content="telephone=no,email=no,adress=no">
+		<!-- 强制全屏显示 -->
+		<meta name="full-screen" content="yes">
+		<!-- 开启对webapp的支持 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- 禁止浏览器从的缓存中访问页面内容 -->
+		<meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/qbdd.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">	
+			<a href="" class="back"></a>
+			<h1>全部订单</h1>
+			<a href="">筛选</a>
+		</header>
+		<main class="main" id="main">
+			<div class="wrap">
+				<p class="pi">
+					<a href=""></a>
+					<span>门票</span>
+					<span>未支付</span>
+				</p>
+				<div class="con">
+					<h1>【水上欢乐趴】秦龙温泉水上乐园 成人票</h1>
+					<p>订单编号&nbsp;&nbsp;JQ-G8305738384</p>
+					<p>购买日期&nbsp;&nbsp;2016-08-30</p>
+				</div>
+				<div class="bt">
+					<span>去支付</span>
+					<span>取消订单</span>
+				</div>
+				
+			</div>
+		</main>
+		<footer class="footer">
+			
+		</footer>
+	</div>
+	<script src="js/iscroll-probe.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/qbdd.js"></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px";
+		//var myscroll=new IScroll("#main");
+	</script>
+	<script>
+		$(".back").on("tap",function(){
+			window.history.go(-1)
+		})
+	</script>
+</body>
+</html>

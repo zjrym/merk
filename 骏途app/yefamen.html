@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<!-- 禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+		<meta name="format-detection" content="telephone=no,email=no，adress=no">
+		<!-- 强制全屏显示 -->
+		<meta name="full-screen" content="yes">
+		<!-- 开启对webapp的支持 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- 禁止浏览器从的缓存中访问页面内容 -->
+		<meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/yefamen.css">
+<body>
+<div class="box">
+	<header class="header">
+		<a href="" class="back"></a>
+		<h1>夜·法门-骏途旅游网</h1>
+		<a href="" class="fenxiang"></a>
+	</header>
+	<main class="main">
+		<div class="banner"></div>
+		<div class="huo"></div>
+		<div class="foot">
+			<img src="img/yefamenshuoming.jpg">
+		</div>
+		<div class="foot2">
+			<img src="img/yefamen.jpg">
+		</div>
+	</main>
+</div>
+	<script src="js/setfontsize.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/yefamen.js"></script>
+	<script>
+	$(".back").on("tap",function(){
+		window.history.go(-1)
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('reset.css');
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+a{
+	color:#000;
+}
+i,em{
+	font-style:normal;
+}
+html,body,.container{
+	@extend %full;
+	background:#efeff4;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+
+body{
+	font-size:0.28rem;
+	font-family:"微软雅黑";
+}
+.container{
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+@mixin class($lh:.82rem){
+	text-align:center;
+	line-height:$lh;
+}
+@mixin btn($w:.22rem,$h:.36rem,$bg:"IMG_3431_06.png",$mt:-.18rem){
+	width:$w;
+	height:$h;
+	background:url(../img/#{$bg}) no-repeat;
+	background-size:cover;
+	@include pos;
+	//left:.3rem;
+	top:50%;
+	margin-top:$mt;
+	font-size:0;
+}
+.header{
+	width:100%;
+	height:0.82rem;
+	background:#f2f2f2;
+	@include pos(relative);
+	h1{
+		color:#000;
+		font-size:.28rem;
+		@include class;
+	}
+	span{
+		&:nth-of-type(1){
+			@include btn;
+			left:.3rem;
+		}
+		&:nth-of-type(2){
+			@include btn($w:.39rem,$h:.41rem,$bg:"IMG_3431_03.png",$mt:-.18rem);
+			right:.3rem;
+		}
+	}
+}
+.main{
+	width:100%;
+	-webkit-flex:1;
+	.banner{
+		width:100%;
+		height:3.4rem;
+		img{
+			width:100%;
+			height:3.4rem;
+		}
+	}
+	h2{
+		width:100%;
+		padding:10px 0 10px 30px;
+		border-top:1px solid #dfdfdf;
+		
+		margin-top:.2rem;
+		background:#fff url(../img/IMG_3431_16.png) no-repeat 10px center;
+		background-size:.3rem .37rem;
+	}
+}
+.dl{
+	width:100%;
+	height:2.2rem;
+	background:#fff;
+	border-bottom:1px solid #dfdfdf;
+	dl{
+		width:25%;
+		margin:.4rem 0;
+		float:left;
+		font-size:.25rem;
+		dt{
+			width:1rem;
+			height:1rem;
+			margin:auto;
+			img{
+				width:100%;
+				height:100%;
+			}
+			
+		}
+		dd{
+			text-align:center;
+			padding-top:.2rem;
+		}
+	}
+}
+
+.theme{
+	width:100%;
+	background:#fff;
+	.hot{
+		width:100%;
+		height:3rem;
+		img{
+			width:100%;
+			height:100%;
+		}
+		@include pos(relative);
+		p{
+		&:nth-of-type(1){
+			padding:5px 10px;
+			background-color: rgba(0,0,0,.7);
+			@include pos;
+			left:10px;
+			top:15px;
+			border-radius:15px;
+			color:#fff;
+		}
+		&:nth-of-type(2){
+			padding:5px 15px;
+			background-color: rgba(0,0,0,.5);
+			@include pos;
+			right:0;
+			bottom:60px;
+			border-radius:10px 0 0 10px;
+			color:#fff;
+		}
+		&:nth-of-type(3){
+			padding:10px;
+			background-color: #f60;
+			@include pos;
+			right:0;
+			bottom:10px;
+			border-radius:5px 0 0 5px;
+			color:#fff;
+		}
+		&:nth-of-type(4){
+			font-size:.3rem;
+			@include pos;
+			left:10px;
+			bottom:10px;
+			color:#fff;
+		}
+		
+	}
+
+	}
+	
+	.ps{
+		font-size:.3rem;
+		padding:.15rem .15rem;
+		//@include pos(realtive);
+		i{
+			//@include pos;
+			display:inline-block;
+			padding:0 5px;
+			border:1px solid #f90;
+			border-radius:6px;
+			color:#f90;
+			margin-left:10px;
+			font-size:.25rem;
+
+		}
+		line-height:28px;
+	}
+	h4{
+		padding:.2rem .6rem;
+		background:url(../img/IMG_3432_03.png) no-repeat 10px center;
+		background-size:.24rem .29rem;
+	}
+}
+
+#pullDown, #pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+	font-family:"Segoe Print";
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block; float:left;
+	width:40px; height:40px;
+	background:url(../img/pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+#myFrame {
+	position:absolute;
+	top:0; left:0;
+}
+
+
+
+
+

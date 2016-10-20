@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url("reset.css");
+html,body,.box{
+	width:100%;
+	height:100%;
+	overdlow:hidden;
+}
+body{
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+@mixin pos($p:relative){
+	position:$p;
+}
+.header{
+	width:100%;
+	height:0.88rem;
+	@include pos(fixed);
+	left:0;
+	top:0;
+	z-index:1000;
+	background:#f0f0f0;
+	h1{
+		text-align:center;
+		line-height:0.88rem;
+		font-size:0.3rem;
+	}
+	a{
+		@include pos(absolute);
+		width:1.19rem;
+		height:0.99rem;
+		top:50%;
+		margin-top:-0.49rem;
+		background:url(../images/title_back.png) no-repeat;
+		background-size:100% 100%;
+	}
+}
+.main{
+	width:100%;
+	height:100%;
+	padding-top:0.88rem;
+	background:#f0f0f0;
+}
+.bao{
+	width:100%;
+	height:auto;
+	background:#fff;
+	p{
+		width:95%;
+		height:0.84rem;
+		margin:0 auto;
+		border-bottom:1px solid #d2d2d2;
+		padding-left:10px;
+		font-size:0.24rem;
+		line-height:0.84rem;
+	}
+}

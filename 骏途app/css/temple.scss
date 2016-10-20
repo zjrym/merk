@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@import url('reset.css');
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:#f2f2f2;
+}
+a{
+	color:#000;
+}
+i,em{
+	font-style:normal;
+}
+html,body,.container{
+	@extend %full;
+	background:#efeff4;
+}
+@mixin pos($p:absolute){
+	position:$p;
+}
+
+body{
+	font-size:0.32rem;
+	font-family:"微软雅黑";
+}
+.container{
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+@mixin class($lh:.82rem){
+	text-align:center;
+	line-height:$lh;
+}
+@mixin btn($w:.22rem,$h:.36rem,$bg:"IMG_3431_06.png",$mt:-.18rem){
+	width:$w;
+	height:$h;
+	background:url(../img/#{$bg}) no-repeat;
+	background-size:cover;
+	@include pos;
+	//left:.3rem;
+	top:50%;
+	margin-top:$mt;
+	font-size:0;
+}
+.header{
+	display:none;
+	width:100%;
+	height:0.82rem;
+	background:#fff;
+	border-bottom:1px solid #f2f2f2;
+	@include pos(relative);
+	h1{
+		color:#000;
+		font-size:.32rem;
+		@include class;
+	}
+	span{
+		&:nth-of-type(1){
+			@include btn;
+			left:.3rem;
+		}
+		&:nth-of-type(2){
+			@include btn($w:.39rem,$h:.41rem,$bg:"IMG_3431_03.png",$mt:-.18rem);
+			right:.3rem;
+		}
+	}
+}
+.main{
+	width:100%;
+	-webkit-flex:1;
+	overflow-y:scroll;
+}
+@mixin pog($w:.42rem,$h:.42rem,$bg:"back_detail.png"){
+	width:$w;
+	height:$h;
+	background:url(../img/#{$bg}) no-repeat;
+	background-size:cover;
+	@include pos;
+	//left:.3rem;
+	top:.3rem;
+	font-size:0;
+}
+.banner{
+	width:100%;
+	height:4rem;
+	background:url(../img/20160824043523854.jpg) no-repeat;
+	background-size:cover;
+	@include pos(relative);
+	p{
+		color:#fff;
+		@include pos;
+		left:.15rem;
+		bottom:10px;
+	}
+	span{
+		width:.7rem;
+		height:.42rem;
+		background:url(../img/image_size.png) no-repeat;
+		background-size:cover;
+		@include pos;
+		right:0;
+		bottom:30px;
+		color:#fff;
+		text-align:right;
+		line-height:.42rem;
+	}
+	i{
+		&:nth-of-type(1){
+			@include pog;
+			left:.3rem;
+		}
+		&:nth-of-type(2){
+			@include pog($w:.42rem,$h:.42rem,$bg:"share_detail.png");
+			right:.3rem;
+		}
+	}
+}
+.baoji{
+	width:100%;
+	height:.8rem;
+	background:#fff;
+	@include pos(relative);
+	p{
+		line-height:.8rem;
+		padding-left:1rem;
+		font-size:.3rem;
+		background:url(../img/location.png) no-repeat .5rem center;
+		background-size:.23rem .23rem;
+	}
+	span{
+		@include btn($w:.14rem,$h:.22rem,$bg:"20160901144457_07.png",$mt:-.065rem);
+		right:.3rem;
+	}
+	border-bottom:1px solid #e0e0e0;
+	border-top:1px solid #e0e0e0;
+
+}
+//秒杀
+.ms{
+	width:100%;
+	height:.8rem;
+	background:#fff;
+	margin-top:.3rem;
+	@include pos(relative);
+	border-bottom:1px solid #e0e0e0;
+	border-top:1px solid #e0e0e0;
+	p{
+		line-height:.8rem;
+		padding-left:1rem;
+		font-size:.3rem;
+		background:url(../img/ticket_1.png) no-repeat .5rem center;
+		background-size:.23rem .23rem;
+	}
+	span{
+		@include btn($w:.18rem,$h:.11rem,$bg:"arrow_up_expanablelistview1.png",$mt:-.05rem);
+		right:.3rem;
+		&.bg{
+			@include btn($w:.18rem,$h:.11rem,$bg:"arrow_down_expanablelistview1.png",$mt:-.05rem);
+			right:.3rem;
+		}
+	}
+
+}
+@mixin id($l:.3rem,$t:60px,$c:#f90){
+	@include pos;
+	left:$l;
+	top:$t;
+	color:$c;
+}
+.nine{
+	height:2.3rem;
+	display: none;
+	border-bottom: 1px solid #e0e0e0;
+	@include pos(relative);
+	p{
+		font-size:.28rem;
+		padding:.15rem .3rem;
+		line-height:23px;
+	}
+	span{
+		&:nth-of-type(1){
+			@include id;
+			font-size:.25rem;
+		}
+		&:nth-of-type(2){
+			@include id($l:250px,$t:53px,$c:#f60);
+			font-size:.36rem;
+			font-weight:bold;
+		}
+		&:nth-of-type(3){
+			@include id($l:250px,$t:70px,$c:#757575);
+			font-size:.28rem;
+			text-decoration: line-through;;
+		}
+		&:nth-of-type(4){
+			@include id($l:.3rem,$t:80px,$c:#757575);
+			font-size:.28rem;
+			text-decoration: underline;
+		}
+	}
+	ul{
+		width:1.4rem;
+		@include id($l:300px,$t:56px,$c:#757575);
+		li{
+			padding:2px 0;
+			font-size:.28rem;
+			text-align: center;
+			&:nth-of-type(1){
+				border:1px solid #f90;
+				border-bottom:none; 
+				border-radius:5px 5px 0 0;
+				background: #f90;
+				color:#fff;
+			}
+			&:nth-of-type(2){
+				border:1px solid #f90;
+				
+				border-radius:0 0 5px 5px;
+				
+				color:#f90;
+			}
+
+		}
+	}
+}
+#nine1{
+	display: none;
+}
+#nine2{
+	display: none;
+}
+.spec{
+
+	height:2.3rem;
+	
+	border-bottom: 1px solid #e0e0e0;
+	@include pos(relative);
+	p{
+		font-size:.28rem;
+		padding:.15rem .3rem;
+		line-height:23px;
+	}
+	span{
+		&:nth-of-type(1){
+			@include id;
+			font-size:.25rem;
+		}
+		&:nth-of-type(2){
+			@include id($l:250px,$t:53px,$c:#f60);
+			font-size:.36rem;
+			font-weight:bold;
+		}
+		&:nth-of-type(3){
+			@include id($l:250px,$t:70px,$c:#757575);
+			font-size:.28rem;
+			text-decoration: line-through;;
+		}
+		&:nth-of-type(4){
+			@include id($l:.3rem,$t:80px,$c:#757575);
+			font-size:.28rem;
+			text-decoration: underline;
+		}
+	}
+	ul{
+		width:1.4rem;
+		@include id($l:300px,$t:56px,$c:#757575);
+		li{
+			padding:2px 0;
+			font-size:.28rem;
+			text-align: center;
+			&:nth-of-type(1){
+				border:1px solid #f90;
+				border-bottom:none; 
+				border-radius:5px 5px 0 0;
+				background: #f90;
+				color:#fff;
+			}
+			&:nth-of-type(2){
+				border:1px solid #f90;
+				
+				border-radius:0 0 5px 5px;
+				
+				color:#f90;
+			}
+
+		}
+	}
+}
+
+.star{
+	background: #fff;
+	h3{
+		width:100%;
+		line-height:.84rem;
+		padding-left:1rem;
+		border-bottom: 1px solid #e0e0e0;
+		background:url(../img/tese.png) no-repeat .5rem center;
+		background-size:.23rem .23rem;
+	}
+	p{
+		padding: .15rem .15rem;
+		line-height:23px;
+	}
+}
+ol{
+		margin-top:12px;
+	li{
+		height:.8rem;
+		
+		padding-left: 1rem;
+		line-height: .8rem;
+		&:nth-of-type(1){
+			border-bottom:1px solid #e0e0e0;
+			border-top: 1px solid #e0e0e0;
+			background:#fff url(../img/ticketpub.png) no-repeat .5rem center;
+			background-size: .2rem .22rem;
+			@include pos(relative);
+			span{
+				@include btn($w:.14rem,$h:.22rem,$bg:"20160901144457_07.png",$mt:-.11rem);
+				right:.3rem;
+			}
+		}
+		&:nth-of-type(2){
+			border-bottom:1px solid #e0e0e0;
+			
+			background:#fff url(../img/ticketpub.png) no-repeat .5rem center;
+			background-size: .2rem .22rem;
+			@include pos(relative);
+			span{
+				@include btn($w:.14rem,$h:.22rem,$bg:"20160901144457_07.png",$mt:-.11rem);
+				right:.3rem;
+			}
+		}
+		&:nth-of-type(3){
+			margin-top:12px;
+			border-bottom:1px solid #e0e0e0;
+			border-top: 1px solid #e0e0e0;
+			background: #fff;
+		}
+
+	}
+}
+
+

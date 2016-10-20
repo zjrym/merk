@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url("reset.css");
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+a{
+	text-decoration: none;
+}
+html{
+	font-size:625%;
+}
+body{
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+@mixin pos($p:relative){
+	position:$p;
+}
+html,body,.container{
+	@extend %full;
+}
+.container{
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+}
+.header{
+	@include pos;
+	width:100%;
+	height:.88rem;
+	background: #f0f0f0;
+	border-bottom: 2px solid #dfdfdf;
+	a{
+		@include pos(absolute);
+		top:.23rem;
+		left:.3rem;
+		width:.28rem;
+		height:.38rem;
+		background: url(../images/1_03.png) no-repeat;
+		background-size: cover;
+	}
+	h1{
+		text-align: center;
+		line-height: .88rem;
+	}
+}
+.main{
+	-webkit-flex-grow:1;
+	width:100%;
+	height:100%;
+	background:#ebebf1;
+	.banner{
+		width:100%;
+		height:1.82rem;  
+		@include pos;
+		img{
+			@include pos(absolute);
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+		}
+	}
+}
+.list{
+	width:100%;
+	height:.88rem;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	@include pos;
+	a{
+		margin-left: .4rem;
+		display: block;
+		line-height: .88rem;
+		color:#000;
+	}
+	span{
+		@include pos(absolute);
+		top:.33rem;
+		right:.3rem;
+		width:.16rem;
+		height:.21rem;
+		background: url(../images/aa_03.png) no-repeat;
+		background-size: cover;
+	}
+	p{
+		@include pos(absolute);
+		right:.4rem;
+		top:.3rem;
+		color:#fd8608;
+	}
+}

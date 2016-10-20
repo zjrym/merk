@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .box {
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑"; }
+
+.header {
+  width: 100%;
+  height: 0.88rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: #fff; }
+  .header h1 {
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.3rem; }
+  .header a {
+    position: absolute; }
+    .header a:nth-of-type(1) {
+      width: 1.19rem;
+      height: 0.99rem;
+      top: 50%;
+      margin-top: -0.49rem;
+      background: url(../img/title_back.png) no-repeat;
+      background-size: 100% 100%; }
+    .header a:nth-of-type(2) {
+      width: 0.54rem;
+      height: 0.36rem;
+      background: url("../img/share_text.png") no-repeat;
+      background-size: auto 100%;
+      right: 10px;
+      top: 50%;
+      margin-top: -0.18rem; }
+
+.main {
+  width: 100%;
+  height: auto;
+  margin-top: 0.88rem;
+  background: #fffadc; }
+
+.banner {
+  width: 100%; }
+  .banner img {
+    width: 100%; }
+
+.remai {
+  width: 100%;
+  margin-top: -5px; }
+  .remai img {
+    width: 100%; }
+
+.top {
+  width: 94%;
+  height: auto;
+  margin: 0 auto; }
+
+.list {
+  width: 100%;
+  height: 5.2rem;
+  background: #fff;
+  margin-bottom: 10px; }
+  .list dl {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative; }
+  .list em {
+    position: absolute;
+    width: 1.44rem;
+    height: 0.5rem;
+    background: #3d414a;
+    border-radius: 0.5rem;
+    font-style: normal;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #fff;
+    font-size: 0.25rem;
+    right: 32px;
+    top: 15px; }
+  .list dt {
+    width: 6.7rem;
+    height: 3.17rem; }
+    .list dt img {
+      wdith: 100%;
+      height: 100%; }
+  .list dd {
+    margin-top: 10px; }
+    .list dd p {
+      font-size: 0.27rem; }
+    .list dd div {
+      font-size: 0.22rem;
+      color: #969696;
+      position: relative; }
+      .list dd div span {
+        font-size: 0.27rem; }
+      .list dd div i {
+        font-style: normal;
+        color: red; }
+      .list dd div a {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 1.04rem;
+        height: 0.56rem;
+        margin-top: -0.28rem;
+        background: #e0283e;
+        border-radius: 5px;
+        font-size: 0.23rem;
+        color: #fff;
+        text-align: center;
+        line-height: 0.56rem; }
+
+.zhitong {
+  width: 100%; }
+  .zhitong img {
+    width: 100%; }
+
+/*# sourceMappingURL=cwangqi.css.map */
