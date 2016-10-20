@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url(style.css);
+body {
+  font-size: 14px;
+  font-family: "微软雅黑"; }
+
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  font-size: 625%; }
+
+.wrap {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #ebe9ef; }
+
+.header {
+  width: 100%;
+  height: .75rem;
+  line-height: .75rem;
+  background: #f7f7f7;
+  position: relative;
+  border-bottom: .01rem solid #ccc; }
+  .header a:nth-of-type(1) {
+    position: absolute;
+    left: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+  .header h1 {
+    text-align: center;
+    font-size: .3rem; }
+  .header a:nth-of-type(2) {
+    position: absolute;
+    right: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  overflow-y: scroll; }
+  .main .swiper-container {
+    width: 100%; }
+    .main .swiper-container .swiper-wrapper {
+      width: 100%; }
+      .main .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 1.7rem; }
+        .main .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          height: 100%; }
+  .main .message {
+    width: 100%;
+    background: #fff; }
+    .main .message ul {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .main .message ul li {
+        width: 100%;
+        border-bottom: .01rem solid #ccc;
+        line-height: 1rem;
+        font-size: .3rem;
+        padding: 0 .3rem;
+        display: -webkit-flex;
+        position: relative; }
+        .main .message ul li input {
+          width: 100%;
+          border: none;
+          line-height: 1rem; }
+        .main .message ul li b {
+          font-weight: normal;
+          color: #666; }
+        .main .message ul li i {
+          font-style: normal; }
+        .main .message ul li span {
+          position: absolute;
+          right: 1rem;
+          top: 0; }
+      .main .message ul .li1 p {
+        margin-left: .2rem;
+        -webkit-flex: 3;
+        position: relative;
+        color: #32b7c5; }
+        .main .message ul .li1 p a {
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: .3rem; }
+      .main .message ul .li1 dl {
+        -webkit-flex: 2;
+        text-align: center;
+        font-size: .3rem;
+        line-height: .5rem;
+        color: #32b7c5; }
+        .main .message ul .li1 dl dd {
+          font-size: .3rem; }
+      .main .message ul .li2 dl {
+        -webkit-flex: .8;
+        margin-top: .1rem; }
+        .main .message ul .li2 dl dd {
+          line-height: .5rem; }
+      .main .message ul .li2 p {
+        -webkit-flex: 1;
+        position: relative;
+        margin-left: .3rem;
+        margin-top: .25rem; }
+        .main .message ul .li2 p a {
+          position: absolute;
+          right: .5rem;
+          top: 0;
+          font-size: .3rem;
+          text-align: center; }
+      .main .message ul .li2 h2 {
+        -webkit-flex: .5;
+        height: .8rem;
+        border: .01rem solid #ccc;
+        border-radius: 50%;
+        text-align: center;
+        line-height: .8rem;
+        font-size: .14rem;
+        margin: .2rem .3rem 0 0;
+        z-index: 999; }
+    .main .message button {
+      width: 95%;
+      height: .75rem;
+      background: #ff9900;
+      color: #fff;
+      border: none;
+      margin: 0 2% 5% 2%; }
+  .main .hotel {
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff; }
+    .main .hotel h2 {
+      font-size: .25rem;
+      padding-left: .3rem;
+      line-height: .8rem; }
+      .main .hotel h2 span {
+        padding-right: .2rem; }
+    .main .hotel dl {
+      display: -webkit-flex;
+      border-bottom: .01rem solid #ccc; }
+      .main .hotel dl dt {
+        -webkit-flex: 1;
+        padding: .2rem; }
+        .main .hotel dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .hotel dl dd {
+        -webkit-flex: 3;
+        font-size: .2rem;
+        font-weight: normal;
+        padding: .2rem;
+        line-height: .5rem; }
+        .main .hotel dl dd h4 {
+          color: #757575; }
+        .main .hotel dl dd h5 {
+          color: #ff6600;
+          font-size: .3rem; }
+          .main .hotel dl dd h5 span {
+            font-size: .2rem; }
+          .main .hotel dl dd h5 a {
+            color: #757575;
+            font-size: .2rem;
+            padding-left: .5rem;
+            text-decoration: line-through; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
+  -webkit-transition: top .5s; }
+  .mark .tianjia {
+    width: 100%;
+    height: 4.78rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ecebf1; }
+    .mark .tianjia button {
+      width: 96%;
+      height: 0.6rem;
+      display: block;
+      margin: 10px auto;
+      background: #fe9900;
+      color: #fff;
+      border: none;
+      border-radius: 5px; }
+  .mark .top {
+    width: 96%;
+    height: 1.7rem;
+    margin: 0 auto; }
+    .mark .top h3 {
+      width: 100%;
+      height: 0.44rem;
+      font-size: 0.21rem;
+      color: #79787d;
+      line-height: 0.44rem;
+      padding-left: 2%; }
+    .mark .top div {
+      width: 100%;
+      height: 1.2rem;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap; }
+      .mark .top div p {
+        width: 30%;
+        height: 0.5rem;
+        font-size: 0.24rem;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 0.5rem;
+        margin-left: 2%;
+        margin-top: 5px; }
+      .mark .top div .yang {
+        color: #fff;
+        background: #39c3d0; }
+  .mark .top1 {
+    width: 96%;
+    height: 1.7rem;
+    margin: 0 auto; }
+    .mark .top1 h3 {
+      width: 100%;
+      height: 0.44rem;
+      font-size: 0.21rem;
+      color: #79787d;
+      line-height: 0.44rem;
+      padding-left: 2%; }
+    .mark .top1 div {
+      width: 100%;
+      height: 1.2rem;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap; }
+      .mark .top1 div p {
+        width: 30%;
+        height: 0.5rem;
+        font-size: 0.24rem;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 0.5rem;
+        margin-left: 2%;
+        margin-top: 5px; }
+      .mark .top1 div .yang1 {
+        color: #fff;
+        background: #39c3d0; }
+
+/*# sourceMappingURL=hotel.css.map */

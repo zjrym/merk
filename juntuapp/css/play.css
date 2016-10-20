@@ -1,0 +1,105 @@
+@import url(reset.css);
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  font-size: 625%; }
+
+.wrap {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #ebe9ef; }
+
+.header {
+  width: 100%;
+  height: .75rem;
+  line-height: .75rem;
+  background: #f7f7f7;
+  position: relative;
+  border-bottom: .01rem solid #ccc; }
+  .header a:nth-of-type(1) {
+    position: absolute;
+    left: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+  .header h1 {
+    text-align: center;
+    font-size: .3rem; }
+  .header a:nth-of-type(2) {
+    position: absolute;
+    right: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+
+.main {
+  width: 100%;
+  overflow-y: scroll;
+  background: #f6f1cb; }
+  .main p {
+    width: 100%;
+    height: 100%; }
+    .main p img {
+      width: 100%;
+      height: 100%;
+      margin: -.3rem 0; }
+  .main .p1 img {
+    margin: 0; }
+  .main .cont, .main .cont1, .main .cont2, .main .cont3 {
+    width: 100%;
+    padding: 2.5%; }
+    .main .cont dl, .main .cont1 dl, .main .cont2 dl, .main .cont3 dl {
+      background: #fff;
+      padding: .2rem;
+      margin-bottom: .2rem;
+      display: -webkit-flex; }
+      .main .cont dl dt, .main .cont1 dl dt, .main .cont2 dl dt, .main .cont3 dl dt {
+        -webkit-flex: 1.5;
+        padding-right: .2rem; }
+        .main .cont dl dt img, .main .cont1 dl dt img, .main .cont2 dl dt img, .main .cont3 dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .cont dl dd, .main .cont1 dl dd, .main .cont2 dl dd, .main .cont3 dl dd {
+        -webkit-flex: 2;
+        font-size: .24rem;
+        line-height: .4rem; }
+        .main .cont dl dd h2, .main .cont1 dl dd h2, .main .cont2 dl dd h2, .main .cont3 dl dd h2 {
+          color: red; }
+          .main .cont dl dd h2 span, .main .cont1 dl dd h2 span, .main .cont2 dl dd h2 span, .main .cont3 dl dd h2 span {
+            font-size: .3rem; }
+        .main .cont dl dd h3, .main .cont1 dl dd h3, .main .cont2 dl dd h3, .main .cont3 dl dd h3 {
+          color: #333; }
+          .main .cont dl dd h3 span, .main .cont1 dl dd h3 span, .main .cont2 dl dd h3 span, .main .cont3 dl dd h3 span {
+            text-decoration: line-through; }
+        .main .cont dl dd h4, .main .cont1 dl dd h4, .main .cont2 dl dd h4, .main .cont3 dl dd h4 {
+          width: 1rem;
+          background: #e0283e;
+          color: #fff;
+          text-align: center;
+          line-height: .5rem;
+          border-radius: .1rem; }
+  .main .co1 {
+    background: #fdd689; }
+  .main .co2 {
+    background: #fbefdf; }
+  .main .co3 {
+    background: #b9dc82; }
+  .main .co4 {
+    background: #7cd6f8; }
+  .main .cot1 {
+    background: #f6f1cb; }
+  .main .cot2 {
+    background: #d6f1ea; }
+  .main .cot3 {
+    background: #f1ebaf; }
+
+/*# sourceMappingURL=play.css.map */

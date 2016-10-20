@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .container {
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑"; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: .88rem;
+  background: #f7f7f7;
+  border-bottom: 2px solid #dfdfdf; }
+  .header a {
+    position: absolute; }
+    .header a:nth-of-type(1) {
+      top: .23rem;
+      left: .3rem;
+      width: .28rem;
+      height: .38rem;
+      background: url(../images/1_03.png) no-repeat;
+      background-size: cover; }
+    .header a:nth-of-type(2) {
+      top: .23rem;
+      right: .3rem;
+      width: .4rem;
+      height: .37rem;
+      background: url(../images/n_03.png) no-repeat;
+      background-size: cover; }
+  .header h1 {
+    text-align: center;
+    line-height: .88rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  width: 100%;
+  background: #ebebf1; }
+
+.banner {
+  width: 100%;
+  height: 6.61rem; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
+
+.banner2 {
+  width: 100%;
+  height: 3.94rem; }
+  .banner2 img {
+    width: 100%;
+    height: 100%; }
+
+.box {
+  width: 95%;
+  padding: 10px;
+  background: #87e181; }
+  .box dl {
+    background: #fff;
+    padding: 10px; }
+    .box dl dt {
+      margin: 0 auto; }
+      .box dl dt img {
+        width: 100%;
+        height: 100%; }
+    .box dl dd h1 {
+      font-size: .3rem; }
+    .box dl dd .list {
+      font-size: .2rem;
+      color: #666; }
+    .box dl dd .p1 {
+      margin-top: .1rem;
+      width: 100%;
+      height: .6rem;
+      border-top: 1px solid #ccc;
+      position: relative; }
+      .box dl dd .p1 span {
+        position: absolute;
+        width: 1rem;
+        height: .6rem;
+        display: block;
+        background: #e0283e;
+        line-height: .6rem;
+        text-align: center;
+        right: .3rem;
+        border-radius: 5px;
+        color: #fff;
+        font-size: .2rem;
+        bottom: -.1rem; }
+      .box dl dd .p1 a {
+        position: absolute;
+        font-size: .2rem; }
+        .box dl dd .p1 a:nth-of-type(1) {
+          color: red;
+          padding-top: .08rem; }
+        .box dl dd .p1 a:nth-of-type(2) {
+          color: #ccc;
+          text-decoration: line-through; }
+
+.footer {
+  width: 100%; }
+  .footer img {
+    width: 100%;
+    height: 100%; }

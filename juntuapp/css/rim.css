@@ -1,0 +1,160 @@
+@import url(style.css);
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  font-size: 625%; }
+
+.wrap {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background: #ebe9ef; }
+
+.header {
+  width: 100%;
+  height: .75rem;
+  line-height: .75rem;
+  background: #f7f7f7;
+  position: relative;
+  border-bottom: .01rem solid #ccc; }
+  .header a:nth-of-type(1) {
+    position: absolute;
+    left: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+  .header h1 {
+    text-align: center;
+    font-size: .3rem; }
+  .header a:nth-of-type(2) {
+    position: absolute;
+    right: .1rem;
+    top: .15rem;
+    font-size: .5rem;
+    color: #3dbfcc; }
+
+input {
+  width: 95%;
+  margin: .17rem 2.5%;
+  height: .6rem;
+  display: block;
+  border: none;
+  background: #fff;
+  text-align: center;
+  border-radius: .5rem; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  background: #f1f1f1; }
+  .main .swiper-container {
+    width: 100%; }
+    .main .swiper-container .swiper-wrapper {
+      width: 100%; }
+      .main .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 3.4rem; }
+        .main .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          height: 100%; }
+  .main .con {
+    width: 100%; }
+    .main .con .nav {
+      width: 100%;
+      height: 1rem;
+      border-bottom: 1px solid #bcbbbb;
+      background: #fff; }
+      .main .con .nav h2 {
+        font-size: .3rem;
+        display: -webkit-flex; }
+        .main .con .nav h2 span {
+          -webkit-flex: 1;
+          text-align: center;
+          line-height: 1rem;
+          display: block; }
+      .main .con .nav p {
+        width: 50%;
+        height: .05rem;
+        background: #ff9801; }
+      .main .con .nav .co {
+        color: #ff9801; }
+    .main .con .content {
+      width: 100%;
+      display: -webkit-flex;
+      -webkit-flex-shrink: 0; }
+    .main .con .zhou, .main .con .play {
+      width: 100%;
+      -webkit-flex-shrink: 0; }
+      .main .con .zhou .biao, .main .con .play .biao {
+        width: 100%;
+        display: -webkit-flex;
+        padding: .3rem 0;
+        background: #fff; }
+        .main .con .zhou .biao dl, .main .con .play .biao dl {
+          -webkit-flex: 1; }
+          .main .con .zhou .biao dl dt, .main .con .play .biao dl dt {
+            padding: 0 .3rem; }
+            .main .con .zhou .biao dl dt img, .main .con .play .biao dl dt img {
+              width: 100%;
+              height: 100%; }
+          .main .con .zhou .biao dl dd, .main .con .play .biao dl dd {
+            font-size: .16rem;
+            text-align: center; }
+      .main .con .zhou .tui, .main .con .play .tui {
+        width: 100%;
+        margin-top: .2rem;
+        background: #fff; }
+        .main .con .zhou .tui p, .main .con .play .tui p {
+          width: 100%;
+          line-height: 1rem;
+          text-align: center;
+          font-size: .18rem;
+          font-weight: bold; }
+        .main .con .zhou .tui ul, .main .con .play .tui ul {
+          width: 100%;
+          display: -webkit-flex; }
+          .main .con .zhou .tui ul li, .main .con .play .tui ul li {
+            -webkit-flex: 1;
+            text-align: center;
+            border: .01rem solid #ccc;
+            border-radius: .3rem;
+            font-size: .16rem;
+            margin: .2rem;
+            padding: .15rem; }
+      .main .con .zhou h3, .main .con .play h3 {
+        width: 100%;
+        text-align: center;
+        line-height: .8rem;
+        font-size: .2rem; }
+      .main .con .zhou .cot, .main .con .play .cot {
+        width: 100%;
+        background: #fff; }
+        .main .con .zhou .cot dl, .main .con .play .cot dl {
+          width: 100%; }
+          .main .con .zhou .cot dl dt, .main .con .play .cot dl dt {
+            width: 95%;
+            padding: 2.5% 2.5% 0 2.5%; }
+            .main .con .zhou .cot dl dt img, .main .con .play .cot dl dt img {
+              width: 100%;
+              height: 100%; }
+          .main .con .zhou .cot dl dd, .main .con .play .cot dl dd {
+            width: 95%;
+            padding: 0 2.5% 0 2.5%;
+            line-height: .5rem; }
+            .main .con .zhou .cot dl dd h2, .main .con .play .cot dl dd h2 {
+              font-size: .3rem; }
+              .main .con .zhou .cot dl dd h2 span, .main .con .play .cot dl dd h2 span {
+                color: #ff6600;
+                margin-left: .8rem; }
+            .main .con .zhou .cot dl dd p, .main .con .play .cot dl dd p {
+              font-size: .18rem; }
+
+/*# sourceMappingURL=rim.css.map */

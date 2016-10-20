@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .box {
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑"; }
+
+.header {
+  width: 100%;
+  height: 0.88rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff; }
+  .header h1 {
+    text-align: center;
+    line-height: 0.88rem;
+    font-size: 0.3rem; }
+  .header a {
+    position: absolute; }
+    .header a:nth-of-type(1) {
+      width: 1.19rem;
+      height: 0.99rem;
+      top: 50%;
+      margin-top: -0.49rem;
+      background: url(../img/title_back.png) no-repeat;
+      background-size: 100% 100%; }
+    .header a:nth-of-type(2) {
+      width: 0.54rem;
+      height: 0.36rem;
+      background: url("../img/share_text.png") no-repeat;
+      background-size: auto 100%;
+      right: 10px;
+      top: 50%;
+      margin-top: -0.18rem; }
+
+.main {
+  width: 100%;
+  height: auto;
+  margin-top: 0.88rem;
+  background: #0f0408; }
+
+.banner {
+  width: 100%;
+  height: 5.64rem;
+  background: url(../img/ye.jpg) no-repeat;
+  background-size: 100% 100%; }
+
+.list {
+  width: 95%;
+  height: auto;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+  .list dl {
+    width: 100%;
+    padding-top: 10px; }
+  .list dt {
+    width: 6.72rem;
+    height: 3.14rem;
+    margin: 0 auto; }
+    .list dt img {
+      width: 100%;
+      height: 100%; }
+  .list dd {
+    width: 6.72rem;
+    padding-top: 0.54rem;
+    margin: 0 auto;
+    padding-bottom: 8px; }
+    .list dd h3 {
+      font-size: 0.26rem; }
+    .list dd p {
+      color: #737373;
+      font-size: 0.22rem;
+      line-height: 0.36rem; }
+      .list dd p:nth-of-type(2) {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f2f2f2; }
+    .list dd div {
+      line-height: 0.4rem;
+      color: #333333;
+      font-size: 0.22rem;
+      position: relative; }
+      .list dd div span {
+        font-size: 0.26rem; }
+      .list dd div i {
+        font-size: 0.26rem;
+        color: red;
+        font-style: normal; }
+      .list dd div a {
+        width: 1.04rem;
+        height: 0.54rem;
+        border-radius: 5px;
+        background: #e0283e;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -0.27rem;
+        color: #fff;
+        text-align: center;
+        line-height: 0.54rem; }
+
+.foot {
+  width: 100%; }
+  .foot img {
+    width: 100%; }
+
+.foot2 {
+  width: 100%; }
+  .foot2 img {
+    width: 100%; }
+
+/*# sourceMappingURL=yefamen.css.map */

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最大最小缩放比例为一，不允许用户手动缩放 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<!-- 禁止设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+		<meta name="format-detection" content="telephone=no,email=no,adress=no">
+		<!-- 强制全屏显示 -->
+		<meta name="full-screen" content="yes">
+		<!-- 开启对webapp的支持 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- 禁止浏览器从的缓存中访问页面内容 -->
+		<meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/sz.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">	
+			<a href="#"></a>
+			<h1>设置</h1>
+		</header>
+		<main class="main">
+			<p class="tz">通知</p>
+			<div class="ts">
+				<a href="#">通知提示声音</a>
+				<span></span>
+			</div>
+			<div class="ts">
+				<a href="#">通知时震动</a>
+				<span></span>
+			</div>
+			<p class="tz">缓存</p>
+			<p class="qc">清除缓存<span>4MB</span></p>
+		</main>
+	</div>
+	<script src="js/iscroll-probe.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/js1.js"></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px";
+	</script>
+</body>
+</html>
